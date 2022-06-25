@@ -167,7 +167,7 @@ const lerp = (a, b, t) => {
 };
 
 
-
+startAirportService(38.08305740356445,38.432220458984375,2851.9519519519517);
 
 function approach(startLat, startLong, endLat, endLong, targetLat, targetLong, upper, lower) {
 
