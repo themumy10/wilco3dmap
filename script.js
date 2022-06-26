@@ -101,7 +101,7 @@ function onDragEnd() {
 
     coordinates.innerHTML = `Longitude: ${a.toDDM().lng}  ${a.toDMS().lng} <br />Latitude: ${a.toDDM().lat}  ${a.toDMS().lat}
     <br/> UTM : ${a.toUTM().display}
-    <br/> UTM : ${a.toMGRS().toString()}
+    <br/> MGRS : ${a.toMGRS().toString()}
     `;
     }
      
