@@ -79,12 +79,17 @@ function startAirportService(centerLong, centerLat,rotateAlt) {
         container: 'map',
         style: 'mapbox://styles/mapbox/satellite-streets-v11',
         center: [centerLong, centerLat],
-        zoom: 14,
+        zoom: 4,
         pitch: 45,
         antialias: true,
-        bearing: 0
+        bearing: 0,
+        projection: 'globe'
 
     });
+    map.on('load', () => {
+      // Set the default atmosphere style
+      map.setFog({});
+      });
     
     const marker = new mapboxgl.Marker({
 draggable: true
@@ -167,7 +172,8 @@ const lerp = (a, b, t) => {
     }
 };
 
-
+startAirportService(38,38,3000);
+ 
 
 function approach(startLat, startLong, endLat, endLong, targetLat, targetLong, upper, lower) {
 
