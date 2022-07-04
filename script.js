@@ -172,7 +172,7 @@ const lerp = (a, b, t) => {
     }
 };
 
-startAirportService(38,38,3000);
+//startAirportService(38,38,3000);
  
 
 function approach(startLat, startLong, endLat, endLong, targetLat, targetLong, upper, lower) {
